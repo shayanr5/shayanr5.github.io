@@ -76,7 +76,7 @@
 		walls.push(new Wall(x = -10, z = -3, width = 8, length = 2, "orange"))
 		walls.push(new Wall(x = -7, z = -15, width = 2, length = 8, "green"))
 		walls.push(new Wall(x = -8, z = -12, width = 8, length = 2, "purple"))
-		walls.push(new Wall(x = -23, z = -17, width = 8, length = 2, "yellow"))
+		walls.push(new Wall(x = -23, z = -17, width = 16, length = 2, "yellow"))
 		walls.push(new Wall(x = -26, z = -12, width = 2, length = 8, "white"))
 		walls.push(new Wall(x = -24, z = -8, width = 8, length = 2, "magenta"))
 		walls.push(new Wall(x = -20, z = -5, width = 2, length = 8, "magenta"))
@@ -97,18 +97,19 @@
 		
   enemies.push(new Enemy(x=0, z=-3.5, v=0.01, direction="x", range=1.5, rotation=0))
 		enemies.push(new Enemy(x=-3, z=-10, v=0.10, direction="z", range=10, rotation=0))
-		enemies.push(new Enemy(x=-18, z=-7, v=0.10, direction="z", range=15, rotation=0))
-		enemies.push(new Enemy(x=-32, z=-5, v=0.10, direction="z", range=9, rotation=0))
-		enemies.push(new Enemy(x=0, z=-5, v=0.10, direction="x", range=5, rotation=0))
-  		
-
+		enemies.push(new Enemy(x=-18, z=-10, v=0.10, direction="x", range=5, rotation=0))
+		enemies.push(new Enemy(x=-31, z=-14, v=0.10, direction="x", range=7, rotation=0))
+		enemies.push(new Enemy(x=-4, z=-5, v=0.10, direction="x", range=10, rotation=0))
+  enemies.push(new Enemy(x=5, z=-4, v=0.20, direction="x", range=5, rotation=0))
+  enemies.push(new Enemy(x=5, z=-12, v=0.10, direction="x", range=7, rotation=0))
+  
 		coins.push(new Coin(x=8, z=-14))
-		coins.push(new Coin(x=7, z=-7))
-		coins.push(new Coin(x=8, z=1))
+		coins.push(new Coin(x=8, z=0))
+	
 		coins.push(new Coin(x=-13, z=-1))
 		coins.push(new Coin(x=-37, z=-16))
-		coins.push(new Coin(x=-15, z=-6))
-		
+  coins.push(new Coin(x=-18, z=-14))
+		coins.push(new Coin(x=-10, z=-15))
 		
 		//touching mobile device screen continues: FORWARD
 		window.addEventListener("touchstart", function(event) {
